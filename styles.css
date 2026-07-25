@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    width: 92%;
+    max-width: 1150px;
+    margin: 25px auto;
+}
+
+.estado-conexion {
+    background-color: #e2f0d9;
+    border: 1px solid #70ad47;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+h2,
+h3 {
+    color: #1f4e79;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button,
+.boton-enlace {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #70ad47;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover,
+.boton-enlace:hover {
+    background-color: #548235;
+}
+
+.mensaje-exito {
+    background-color: #e2f0d9;
+    border: 1px solid #70ad47;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.mensaje-error {
+    background-color: #fbe5e5;
+    border: 1px solid #c00000;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #009eae;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d8ecee;
+}
+
+tr:nth-child(even) {
+    background-color: #f7fafa;
+}

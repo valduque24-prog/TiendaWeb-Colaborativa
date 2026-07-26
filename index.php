@@ -47,7 +47,7 @@ $tipoMensaje = isset($_GET["tipo"]) ? $_GET["tipo"] : "";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de compras - Tienda</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="validaciones.js" defer></script>
+    <script src="validaciones.js?v=2" defer></script>
 </head>
 
 <body>
@@ -119,11 +119,19 @@ $tipoMensaje = isset($_GET["tipo"]) ? $_GET["tipo"] : "";
 
         <h3>Productos registrados</h3>
 
+        <label for="buscarProducto"><strong>Buscar producto:</strong></label>
+
+        <input
+            type="text"
+            id="buscarProducto"
+            placeholder="Escriba el nombre del producto..."
+            onkeyup="buscarProducto()">
+
         <?php if (empty($productos)) { ?>
             <p>No existen productos registrados.</p>
         <?php } else { ?>
             <div class="tabla-contenedor">
-                <table>
+                <table id="tablaProductos">
                     <thead>
                         <tr>
                             <th>ID</th>

@@ -67,3 +67,24 @@ function validarCompra() {
 
     return true;
 }
+
+function buscarProducto() {
+    const input = document.getElementById("buscarProducto");
+    const tabla = document.getElementById("tablaProductos");
+    const filas = tabla.getElementsByTagName("tr");
+
+    const textoBusqueda = input.value.toLowerCase();
+
+    for (let i = 1; i < filas.length; i++) {
+        const nombreProducto = filas[i]
+            .getElementsByTagName("td")[1]
+            .textContent
+            .toLowerCase();
+
+        if (nombreProducto.includes(textoBusqueda)) {
+            filas[i].style.display = "";
+        } else {
+            filas[i].style.display = "none";
+        }
+    }
+}
